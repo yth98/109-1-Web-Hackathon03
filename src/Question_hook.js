@@ -14,7 +14,7 @@ function Question() {
   const [current_question, setCurrentQuestion] = useState(0) // index to current question
 
   const next = async () => {
-    if (ans[ans.length-1] === -1) return
+    // if (ans[ans.length-1] === -1) return
     if (current_question < contents.length-1) {
       setCurrentQuestion(current_question+1)
       setAns([...ans, -1])
